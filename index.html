@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather application">
+    <title>Weather app API Consumer</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <main>
+        
+        <section class="container mb-4 row align-items-center flex-wrap-reverse">
+            <div class="col-md-6">
+               <h1> Stay one step <span> ahead</span> of the weather </h1>
+               <a href="#input" class="btn mt-4 btn-light">Get Started</a>
+            </div>
+            <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_psubbtma.json"  background="transparent"  speed="1"  class="col-md-6" style="height: auto;"  loop  autoplay></lottie-player>
+        </section>
+            
+        <div class="container holder">
+            <article class="search-holder mb-2">
+                <input type="text" id="input" autocomplete="off" class="search-box"  placeholder="Search for a city..">
+                <!-- <input type="number" name="days" id="days" class="days" placeholder="Number of days" value="0"> -->
+                <div class="line"></div>
+                <img src="icons/search-icon.svg" alt="search-icon" class="icon">
+            </article>
+            <small>Search for any city in the world to see upto 3 days of weather forecast</small>
+
+            <section class="location">
+                <h2 class="city">
+                    Nairobi
+                </h2>
+                <p class="country">
+
+                </p>
+                
+            </section>
+
+        <section class="row">
+            <div class="current col-md-4">
+                <div class="icon-holder">
+                    <img src="" alt="weather icon" class="weather-icon">
+                </div>
+                <h4 class="weather-type">
+                    
+                </h4>
+                <h6 class="avg-temp-holder">
+                   <span class="temp"> </span>&deg;C
+                </h6>
+                <p class="date">
+
+                </p>
+            </div>
+
+            <div class="day2 col-md-4">
+                <div class="icon-holder">
+                    <img src="" alt="weather icon" class="weather-icon2">
+                </div>
+                <h4 class="weather-type2">
+                    
+                </h4>
+                <h6 class="avg-temp-holder">
+                   <span class="temp2"> </span>&deg;C
+                </h6>
+                <p class="date2">
+                    
+                </p>
+            </div>
+
+            <div class="day3 col-md-4">
+                <div class="icon-holder">
+                    <img src="" alt="weather icon" class="weather-icon3">
+                </div>
+                <h4 class="weather-type3">
+                    
+                </h4>
+                <h6 class="avg-temp-holder">
+                   <span class="temp3"> </span>&deg;C
+                </h6>
+                <p class="date3">
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+          
+        </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
