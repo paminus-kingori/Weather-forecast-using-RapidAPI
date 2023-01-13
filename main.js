@@ -41,11 +41,6 @@ icon.addEventListener("click",function(){
 
 
 function startResults(){
-    // fetch('https://weatherapi-com.p.rapidapi.com/forecast.json?q='+startCity+'&days=2',options)
-    // .then(response => response.json())
-	// .then(response => console.log(response))
-	// .catch(err => console.error(err));
-
     fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${startCity}&days=3`,options)
 	.then(response => response.json())
 	.then(response => displayResults(response))
@@ -63,25 +58,13 @@ function setQuery(evt){
 }
 
 function getResults(city){
-    // fetch('https://api.openweathermap.org/data/2.5/weather?q='+searchbox.value+'&units=metric&appid=7638c144a312ced0828ccfdeb2684209')
-    // .then(weather => {
-    //         return weather.json();
-    //     })
-    // .then(displayResults)
-    // .catch(()=>{
-    //         alert("Error. Please try another city")
-    //     })
-
-    //     fetch('https://weatherapi-com.p.rapidapi.com/forecast.json?q='+city+'&days='+day+',options')
-    //     .then(response => response.json())
-	// .then(response => console.log(response))
-	// .catch(err => console.error(err));
-
     fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${city}&days=3`, options)
 	.then(response => response.json())
 	.then(response => displayResults(response))
-	.catch(err => console.error(err));
-    
+	.catch((err)=>{
+                console.log(err);
+                alert("Sorry, didn't get that. Please try another city");
+            });
 }
 
 function displayResults(weather){
